@@ -1,0 +1,46 @@
+insert into 
+produit(name, price, note, image, typeProd, marque) 
+values
+('Televiseur Smart TV ultra-plat 4K UHD LED', 500, 4, 'img/produits/electro/1.jpeg', 'electro', 'Philips'),
+('65" UHD 4K Flat Smart TV Curved KU6500 Serie 6', 450, 4, 'img/produits/electro/2.jpg', 'electro', 'Samsung'),
+('iPhone', 550, 4, 'img/produits/electro/3.jpg', 'electro', 'Apple');
+
+insert into 
+produit(name, price, note, image, typeProd, marque) 
+values
+('The Sun', 100, 3, 'img/produits/mode/1.jpg', 'mode', 'Standard'),
+("Pippa O'Connor", 90, 4, 'img/produits/mode/2.jpg', 'mode', "O'Connor"),
+('Elle Canada Sun', 100, 3, 'img/produits/mode/5.jpg', 'mode', 'Standard'),
+("Boys Ramadan", 90, 5, 'img/produits/mode/4.jpg', 'mode', "Twenty4");
+
+insert into 
+produit(name, price, note, image, typeProd, marque) 
+values
+('Produit 1', 45, 3, 'img/produits/spa/1.png', 'spa', 'Dubai SPA'),
+('Trepup', 45, 4, 'img/produits/spa/3.jpg', 'spa', 'Bangalore'),
+("Vella Farga", 30, 3, 'img/produits/spa/2.jpeg', 'spa', "Dubai SPA");
+
+insert into 
+produit(name, price, note, image, typeProd, marque) 
+values
+('Salon 1 1', 200, 3, 'img/produits/design/1.jpg', 'design', 'Tomali'),
+('Salle à manger', 125, 4, 'img/produits/design/3.jpg', 'design', 'Standard'),
+("Salon 2", 145, 3, 'img/produits/design/2.jpg', 'design', "Standard"),
+('TopMila Dining table round', 350, 5, 'img/produits/design/4.jpg', 'design', 'TopMila'),
+('Meuble TV', 125, 5, 'img/produits/design/5.jpg', 'design', 'Alinea');
+
+insert into 
+produit(name, price, note, image, typeProd, marque) 
+values
+('KidsBele 1', 45, 3, 'img/produits/enfant/1.jpg', 'enfant', 'BORSALINO'),
+('Porteur', 35, 2, 'img/produits/enfant/2.jpg', 'enfant', 'Little Bikloon'),
+("Violon Outfit", 20, 4, 'img/produits/enfant/3.jpg', 'enfant', "Carlton");
+
+insert into 
+produit(name, price, note, image, typeProd, marque) 
+values
+('Burger', 20, 3, 'img/produits/repas/1.jpg', 'repas', 'Standard'),
+('Pizza', 50, 4, 'img/produits/repas/3.jpg', 'repas', 'Standard'),
+("Italien", 10, 3, 'img/produits/repas/2.jpg', 'repas', "Standard"),
+('Poulet', 40, 5, 'img/produits/repas/4.jpg', 'repas', 'Standard'),
+('Garbage Bread', 30, 4, 'img/produits/repas/5.jpg', 'repas', 'Standard');

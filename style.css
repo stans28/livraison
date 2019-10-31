@@ -1,397 +1,147 @@
-html {
-    line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    font-weight: normal;
-    color: #383838de;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+h1
+{
+    color:hotpink;
+    margin: 50px;
+    text-align: center;
 }
 
-.container {
-    width: 90%;
-    margin-left: 5%;
+.s1 {
+  margin: 3%;
+}
+.s2 {
+  margin: 3%;
+}
+.s3 {
+  margin: 3%;
+}
+.s4 {
+  margin: 3%;
+}
+.s5 {
+  margin: 3%;
+}
+.s6 {
+  margin: 3%;
 }
 
-.head {
-    width: 100%;
-    height: 20em;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
+.titre {
+  text-align: center;
+  border: 2px solid hotpink;
+  padding: 6px;
+
+}
+.lien {
+  text-decoration: none;
+  color:black;
 }
 
-.head .lide {
-    position: relative;
-    background-color: rgba(0, 0, 0);
-}
-
-.head .myslide1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20em;
-    object-position: center;
-    object-fit: cover;
-    filter: brightness(50%);
-    transition: opacity 2s;
-}
-
-.myslide1:nth-child(2),
-.myslide1:nth-child(3) {
-    opacity: 0;
-}
-
-.head .titleDesc {
-    height: 20em;
-    display: table;
-}
-
-.head div h3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20em;
-    display: table-cell;
+.som {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: grey;
+  }
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: grid;
     color: white;
     text-align: center;
-    vertical-align: middle;
-    cursor: default;
-    font-size: 1.2em;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: hotpink;
+  }
+ 
+.explication {
+  width: 65%;
+  float: right;
+
 }
 
 .list {
-    position: relative;
-    z-index: 10;
-    margin-top: -2em;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 0 10% 0 10%;
+
+  display: flex;
+  -ms-flex-wrap: wrap;
+  text-align: center;
+  padding: 0 10% 0 10%;
 }
 
 .list .card {
-    font-size: 0.9em;
-    background-color: white;
-    padding: 20px;
-    display: inline-block;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    margin: 0 6px 20px 6px;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex: 0 0 calc((100% / 3) - 60px);
-    flex: 0 0 calc((100% / 3) - 60px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+  font-size: 0.9em;
+  background-color: grey;
+  padding: 15px;
+  display: inline-block;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 6px 20px 6px;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.card:nth-child(1):hover {
-    background-color: rgb(70, 70, 70);
-    color: white;
+.card:hover {
+  background-color: hotpink;
 }
 
-.card:nth-child(2):hover {
-    background-color: rgb(255, 112, 112);
-    color: white;
+.pic {
+  float: right;
 }
 
-.card:nth-child(3):hover {
-    background-color: rgb(0, 144, 106);
-    color: white;
+.cote{
+  float: right;
 }
 
-.card:nth-child(4):hover {
-    background-color: rgb(0, 140, 240);
-    color: white;
+.explain {
+  float: right;
+  width: 45%;
 }
 
-.card:nth-child(5):hover {
-    background-color: rgb(255, 38, 251);
-    color: white;
-}
-
-.card:nth-child(6):hover {
-    background-color: rgb(255, 163, 101);
-    color: white;
-}
-
-.cardicon {
-    font-size: 1.8em;
-}
-
-.card-list-name {
-    width: 60%;
-    margin: 1em;
-    word-wrap: break-word;
-    display: inline-block;
-    vertical-align: middle
-}
-
-
-/* Modal */
-
-.backmodal {
-    position: absolute;
-    width: 100%;
-    padding-bottom: 50px;
-    min-height: calc(100vh - 60px);
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 900;
-    display: none;
-}
-
-.modal {
-    background-color: white;
-    width: 80%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    margin: 50px 0 0 10%;
-    transition: opacity 0.5s;
-}
-
-.modal-content {
-    background-color: rgb(230, 230, 230);
-}
-
-.modal-header {
-    padding: 1em;
-    background-color: rgb(70, 70, 70);
-    color: white;
-}
-
-#back {
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 0.3em;
-    background-color: rgba(0, 0, 0, 0);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#back:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.icont {
-    display: inline;
-    margin: 0 0.2em 0 1em;
-}
-
-.modal-title {
-    display: inline;
-    margin: 0 0 0 0.2em;
-}
-
-
-/* In List Product */
-
-.prodCard {
-    margin: 10px;
-    width: calc((100% / 3) - 25px);
-    max-height: auto;
-    display: inline-block;
-    background-color: white;
-    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.49);
-    overflow: hidden;
-}
-
-.row {
-    position: relative;
-    display: flexbox;
-    padding: 0.5em;
-    background-color: white;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.row div:nth-child(0),
-.row div:nth-child(1),
-.row div:nth-child(2) {
-    display: inline-block;
-}
-
-.imgCard {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    transition: filter 0.3s;
-}
-
-.imgCard img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.nameProd {
-    font-size: 0.8em;
-    width: calc(90% - 5px);
-}
-
-.getDetail {
-    color: rgb(82, 82, 82);
-    width: calc(10% - 5px);
-    text-align: center;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.getDetail:hover {
-    color: rgb(50, 50, 50);
-}
-
-.stars {
-    font-size: 0.9em;
-    color: grey;
-    cursor: default;
-    font-size: 0.9em;
-}
-
-.yellow,
-.grey {
-    display: inline;
-}
-
-.yellow {
-    color: yellow;
-}
-
-.price {
-    float: right;
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    color: rgb(26, 114, 105);
-    font-size: 0.8em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.details {
-    background-color: white;
-    transition: margin 0.5s;
-}
-
-.ubder {
-    width: calc(100% - 20px);
-    padding: 0.5em;
-}
-
-.under {
-    margin-left: 10px;
-    display: none;
-    opacity: 0;
-    font-size: 0.8em;
-    color: grey;
-    transition: opacity 0.2s;
-}
-
-.formulaire {
-    padding: 10px;
-    width: 100%;
-}
-
-label {
-    font-size: 0.8em;
-    color: grey;
-    width: 30%;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-input[type="text"],
-input[type="number"] {
-    border: none;
-    border-bottom: 1px solid rgb(199, 199, 199);
-    padding: 5px;
-    width: 50%;
-    color: rgb(88, 88, 88);
-    transition: border 0.3s;
-}
-
-input:focus {
-    border-bottom-color: rgb(37, 182, 136);
-}
-
-.partForm {
-    margin: 5px;
-    width: 100%
-}
-
-.radio {
-    margin-top: 5px;
-    margin-right: 20px;
-}
-
-.radio label {
-    display: inline-block;
-    vertical-align: middle;
-    width: 45%;
-}
-
-.sub {
-    float: right;
-    background-color: teal;
-    color: white;
-    width: 40%;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    margin: 40px 10% 0 0;
-    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.4);
-    transition: background-color 0.5s, box-shadow 0.5s;
-}
-
-.sub:hover {
-    background-color: rgb(0, 172, 172);
-    box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.4);
-}
-
-.ico {
-    opacity: 0.8;
-    font-size: 0.8em;
-}
-
-@media screen and (max-width:850px) {
-    .list .card {
-        -ms-flex: 0 0 calc((100% / 2) - 60px);
-        flex: 0 0 calc((100% / 2) - 60px);
-        margin: 6px;
-        font-size: 0.7em;
-    }
-    .head {
-        background-size: 100% 70%
-    }
-    .prodCard {
-        width: calc(100% - 20px);
-    }
-}
-
-@media screen and (max-width:500px) {
-    .list .card {
-        -ms-flex: 0 0 calc(100% - 60px);
-        flex: 0 0 calc(100% - 60px);
-        margin: 6px;
-        font-size: 0.7em;
-    }
-    .container {
-        width: calc(100% - 10px);
-        padding: 5px;
-        margin: 0;
-    }
-    .head div h3 {
-        font-size: 1em;
-        padding: 0 10px 0 10px;
-        width: calc(100% - 20px);
-    }
-    .prodCard {
-        width: calc(100% - 20px);
-    }
+@media screen and (max-width:800px) {
+  body {
+    background-color:black;
+    color:white;
+    font-size: 95%;
+  }
+  .liste {
+    font-size: 75%;
+    margin: -3px;
+  }
+  .list {
+    flex-flow: column wrap;
+  }
+  img {
+    width: 100px;
+  }
+  img.imgs {
+    width: 130px;
+  }
+  img.ima {
+    width: 180px;
+  }
+  img.imo {
+    width: 150px;
+  }
+  img.ime {
+    width: 280px;
+  }
+  img.imm {
+    width: 200px;
+  }
+  img.imgg {
+    width: 550px;
+  }
+  img.imn {
+    width: 380px;
+  }
+  img.imge {
+    width: 200px;
+  }
 }

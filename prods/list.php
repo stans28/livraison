@@ -28,14 +28,14 @@ else{
 
 $data = $query->getProduct($type);
 
-   for ($i=0; $i < count($data); $i++) { 
-       
+   for ($i=0; $i < count($data); $i++) {
+
 ?>
 
 <div class='prodCard'>
 
     <div class="imgCard">
-        <img src="<?php echo $data[$i]['image']; ?>" alt="<?php echo $data[$i]['name']; ?>">
+        <img src="<?php echo $data[$i]['image']; ?>" alt="">
     </div>
     <div class="details">
         <div class="row">
@@ -79,7 +79,7 @@ $data = $query->getProduct($type);
 
             <div class="under">
                 <div class="brand">
-                    
+
                     <span class="fa fa-tag"></span> <?php echo $data[$i]['marque']; ?>
                 </div>
 
@@ -109,11 +109,11 @@ $data = $query->getProduct($type);
                             <div>
                                 <button type="submit" class='sub'><span class='ico'><span class="fa fa-shipping-fast"></span></span> Livrer</button>
                             </div>
-                            
+
                         </div>
                     </form>
                 </div>
-                
+
             </div>
         </div>
     </div>
